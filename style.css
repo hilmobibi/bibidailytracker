@@ -1,3 +1,8 @@
 .timeline {
-    color: brown;
+    color: black;
+    display: flex;
+    background-color: white;
+    margin: 0 0;
+    padding-bottom: 50px;
+    border: solid gray 1px;
 }
