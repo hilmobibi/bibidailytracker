@@ -6,3 +6,21 @@
     padding-bottom: 50px;
     border: solid gray 1px;
 }
+
+#addTask {
+    position: fixed;
+    bottom: 20px;          /* Space from bottom */
+    right: 20px;           /* Space from right */
+    
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 50px;   /* More rounded for a button look */
+    
+    padding: 15px 30px;    /* Bigger button */
+    font-size: 18px;       /* Bigger text */
+    font-weight: bold;     /* Better visibility */
+    
+    cursor: pointer;       /* Show pointer on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
