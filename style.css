@@ -1,3 +1,7 @@
+main {
+    
+}
+
 body {
     font-family: monospace;
     background-color: rgb(255, 230, 200);
@@ -7,7 +11,7 @@ body {
     color: black;
     display: flex;
     margin: 0 0;
-    padding-bottom: 50px;
+    padding-bottom: 15%;
     border-top: solid rgba(128, 128, 128,50%) 0.1px;
     font-size: 18px;
     
