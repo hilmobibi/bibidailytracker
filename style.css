@@ -1,26 +1,32 @@
+body {
+    font-family: monospace;
+    background-color: rgb(255, 230, 200);
+}
+
 .timeline {
     color: black;
     display: flex;
-    background-color: white;
     margin: 0 0;
     padding-bottom: 50px;
-    border: solid gray 1px;
+    border-top: solid rgba(128, 128, 128,50%) 0.1px;
+    font-size: 18px;
+    
 }
 
 #addTask {
-    position: fixed;
-    bottom: 20px;          /* Space from bottom */
-    right: 20px;           /* Space from right */
-    
-    background-color: brown;
     color: white;
+    position: fixed;
+    margin: 50px;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    right: 0;
     border: none;
-    border-radius: 50px;   /* More rounded for a button look */
-    
-    padding: 15px 30px;    /* Bigger button */
-    font-size: 18px;       /* Bigger text */
-    font-weight: bold;     /* Better visibility */
-    
-    cursor: pointer;       /* Show pointer on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+    font-size: 35px;
+    background-color: rgb(128, 196, 128);
+    cursor: pointer;
+    border-radius: 25px;
 }
+
+
+
