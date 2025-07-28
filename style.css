@@ -1,3 +1,5 @@
+
+
 body {
     font-family: monospace;
     background-color: rgb(255, 230, 200);
@@ -7,26 +9,26 @@ body {
     color: black;
     display: flex;
     margin: 0 0;
-    padding-bottom: 15%;
+    padding-bottom: 15vw;
     border-top: solid rgba(128, 128, 128,50%) 1px;
-    font-size: 200%;
+    font-size: 5vw;
     
 }
 
-#addTask {
-    color: white;
-    position: fixed;
-    margin: 50px;
-    width: 100px;
-    height: 100px;
-    bottom: 0;
-    right: 0;
-    border: none;
-    font-size: 350%;
-    background-color: rgb(128, 196, 128);
-    cursor: pointer;
-    border-radius: 50%;
-}
+    #addTask {
+        color: white;
+        position: fixed;
+        margin: 50px;
+        bottom: 0;
+        right: 0;
+        border: none;
+        background-color: rgb(128, 196, 128);
+        cursor: pointer;
+        border-radius: 50%;
+        width: 15vw;
+        height: 15vw;
+        font-size: 10vw;
+    }
 
 
 
