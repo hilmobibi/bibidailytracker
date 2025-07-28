@@ -12,3 +12,10 @@ const menu = document.getElementById('menu');
       menu.classList.add('hidden');
     }
   });
+
+
+//delete task button
+const deleteTaskBtn = document.getElementById('deleteTask');
+deleteTaskBtn.addEventListener('click', () => {
+    alert("beneran kamuh?")
+})

@@ -30,9 +30,28 @@ body {
     font-size: 10vw;
 }
 
+#deleteTask{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    position: fixed;
+    margin: 3vw;
+    top: 0;
+    right: 0;
+    border: none;
+    cursor: pointer;
+    font-size: 3vw;
+    border-radius: 50vw;
+    padding: 1vw;
+}
+
 #addTask:active {
   transform: scale(0.95); /* shrink slightly on click */
 }
+
+#deleteTask:active{
+    transform: scale(0.95);
+}
+
 /* Popup menu */
 #menu {
   position: fixed;
