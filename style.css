@@ -10,25 +10,43 @@ body {
     display: flex;
     margin: 0 0;
     padding-bottom: 15vw;
-    border-top: solid rgba(128, 128, 128,50%) 1px;
+    border-top: solid rgba(128, 128, 128,50%) 0.2vw;
     font-size: 5vw;
     
 }
 
-    #addTask {
-        color: white;
-        position: fixed;
-        margin: 50px;
-        bottom: 0;
-        right: 0;
-        border: none;
-        background-color: rgb(128, 196, 128);
-        cursor: pointer;
-        border-radius: 50%;
-        width: 15vw;
-        height: 15vw;
-        font-size: 10vw;
-    }
+#addTask {
+    color: white;
+    position: fixed;
+    margin: 10vw;
+    bottom: 0;
+    right: 0;
+    border: none;
+    background-color: rgb(128, 196, 128);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 15vw;
+    height: 15vw;
+    font-size: 10vw;
+}
+
+#addTask:active {
+  transform: scale(0.95); /* shrink slightly on click */
+}
+/* Popup menu */
+#menu {
+  position: fixed;
+  background: white;
+  font-size: 5vw;
+  bottom: 27vw;
+  right: 5vw;
+  overflow: hidden;
+
+}
+/* Hide by default */
+.hidden {
+  display: none;
+}
 
 
 
