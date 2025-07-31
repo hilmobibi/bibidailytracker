@@ -6,7 +6,7 @@ body {
 }
 
 .timeline {
-    color: black;
+    color: rgb(50,50,50);
     display: flex;
     margin: 0 0;
     padding-bottom: 15vw;
@@ -33,6 +33,7 @@ body {
 #deleteTask{
     background-color: rgb(255, 0, 0);
     color: white;
+    font-weight: 600;
     position: fixed;
     margin: 3vw;
     top: 0;
