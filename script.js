@@ -51,13 +51,43 @@ const hour23 = document.getElementById('hour23');
 function showResult() {
   const select_start_time = document.getElementById('selectStartTime');
   const select_end_time = document.getElementById('selectEndTime');
-  const startValue = select_start_time.value;
-  const endValue = select_end_time.value;
+  const startValue = parseInt(select_start_time.value); // convert to number
+  const endValue = parseInt(select_end_time.value);
 
-  if (startValue === "" || endValue === "" ) {
-    alert('isi kontol')
-  }else {
-    console.log(startValue);
-    console.log(endValue);
+  if (isNaN(startValue) || isNaN(endValue)) {
+    alert('isi kontol');
+  } else {
+    console.log(startValue, endValue);
+
+    // Validate that end is after start
+    if (endValue <= startValue) {
+      alert("End time must be after start time!");
+      return;
+    }
+
+    // Height of each hour block (for example 5vw)
+    const hourBlockHeight = 21; // in vw
+
+    // Calculate top and height
+    const top = startValue * hourBlockHeight;
+    const height = (endValue - startValue) * hourBlockHeight;
+
+    // Create the task element
+    const task = document.createElement("div");
+    task.classList.add("task");
+    task.innerText = `Task: ${startValue} - ${endValue}`;
+    task.style.position = "absolute";
+    task.style.left = "10vw";
+    task.style.top = `calc(${top}vw + 9px)`;
+    task.style.height = `calc(${height}vw)`;
+    task.style.background = "rgba(0, 150, 255, 0.7)";
+    task.style.width = "20vw";
+    task.style.borderRadius = "1vw";
+    task.style.color = "#fff";
+    task.style.textAlign = "center";
+
+    // Append to container
+    document.querySelector("#scrollableTimeline").appendChild(task);
   }
 }
+
