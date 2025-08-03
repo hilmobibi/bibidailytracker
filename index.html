@@ -1,54 +1,112 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>7.31.1</title>
+        <title>8.3.1</title>
         <link rel="stylesheet" href="style.css" />
     </head>
 
     <body>
         <main id="main">
             <div id="scrollableTimeline">
-                <div class="timeline" id="00">00</div>
-                <div class="timeline" id="01">01</div>
-                <div class="timeline" id="02">02</div>
-                <div class="timeline" id="03">03</div>
-                <div class="timeline" id="04">04</div>
-                <div class="timeline" id="05">05</div>
-                <div class="timeline" id="06">06</div>
-                <div class="timeline" id="07">07</div>
-                <div class="timeline" id="08">08</div>
-                <div class="timeline" id="09">09</div>
-                <div class="timeline" id="10">10</div>
-                <div class="timeline" id="11">11</div>
-                <div class="timeline" id="12">12</div>
-                <div class="timeline" id="13">13</div>
-                <div class="timeline" id="14">14</div>
-                <div class="timeline" id="15">15</div>
-                <div class="timeline" id="16">16</div>
-                <div class="timeline" id="17">17</div>
-                <div class="timeline" id="18">18</div>
-                <div class="timeline" id="19">19</div>
-                <div class="timeline" id="20">20</div>
-                <div class="timeline" id="21">21</div>
-                <div class="timeline" id="22">22</div>
-                <div class="timeline" id="23">23</div>
+                <div class="timeline" id="hour00">00</div>
+                <div class="timeline" id="hour01">01</div>
+                <div class="timeline" id="hour02">02</div>
+                <div class="timeline" id="hour03">03</div>
+                <div class="timeline" id="hour04">04</div>
+                <div class="timeline" id="hour05">05</div>
+                <div class="timeline" id="hour06">06</div>
+                <div class="timeline" id="hour07">07</div>
+                <div class="timeline" id="hour08">08</div>
+                <div class="timeline" id="hour09">09</div>
+                <div class="timeline" id="hour10">10</div>
+                <div class="timeline" id="hour11">11</div>
+                <div class="timeline" id="hour12">12</div>
+                <div class="timeline" id="hour13">13</div>
+                <div class="timeline" id="hour14">14</div>
+                <div class="timeline" id="hour15">15</div>
+                <div class="timeline" id="hour16">16</div>
+                <div class="timeline" id="hour17">17</div>
+                <div class="timeline" id="hour18">18</div>
+                <div class="timeline" id="hour19">19</div>
+                <div class="timeline" id="hour20">20</div>
+                <div class="timeline" id="hour21">21</div>
+                <div class="timeline" id="hour22">22</div>
+                <div class="timeline" id="hour23">23</div>
             </div>
+            
             <div>
-                <button id="addTask">+</button>
+                <!-- 
                 <button id="deleteTask">Delete</button>
+                -->
+                <button id="addTask">+</button>
             </div>
+            
             <div id="menu" class="hidden">
-                <ul>
+                <ul id="addTaskMenuUl">
                     <li>
                         <p>task name</p>
                         <input type="text">
                     </li>
-                    <li>
-                        <p>choose time</p>
-                        <input type="time" step="60">
+                    <li id="startTime">
+                        <p>start time</p>
+                        <select size="5" class="selectTime" id="selectStartTime">
+                            <option value="00">00:00</option>
+                            <option value="01">01:00</option>
+                            <option value="02">02:00</option>
+                            <option value="03">03:00</option>
+                            <option value="04">04:00</option>
+                            <option value="05">05:00</option>
+                            <option value="06">06:00</option>
+                            <option value="07">07:00</option>
+                            <option value="08">08:00</option>
+                            <option value="09">09:00</option>
+                            <option value="10">10:00</option>
+                            <option value="11">11:00</option>
+                            <option value="12">12:00</option>
+                            <option value="13">13:00</option>
+                            <option value="14">14:00</option>
+                            <option value="15">15:00</option>
+                            <option value="16">16:00</option>
+                            <option value="17">17:00</option>
+                            <option value="18">18:00</option>
+                            <option value="19">19:00</option>
+                            <option value="20">20:00</option>
+                            <option value="21">21:00</option>
+                            <option value="22">22:00</option>
+                            <option value="23">23:00</option>
+                        </select>
+                    </li>
+                    <li id="endTime">
+                         <p>end time</p>
+                        <select size="5" class="selectTime" id="selectEndTime">
+                            <option value="00">00:00</option>
+                            <option value="01">01:00</option>
+                            <option value="02">02:00</option>
+                            <option value="03">03:00</option>
+                            <option value="04">04:00</option>
+                            <option value="05">05:00</option>
+                            <option value="06">06:00</option>
+                            <option value="07">07:00</option>
+                            <option value="08">08:00</option>
+                            <option value="09">09:00</option>
+                            <option value="10">10:00</option>
+                            <option value="11">11:00</option>
+                            <option value="12">12:00</option>
+                            <option value="13">13:00</option>
+                            <option value="14">14:00</option>
+                            <option value="15">15:00</option>
+                            <option value="16">16:00</option>
+                            <option value="17">17:00</option>
+                            <option value="18">18:00</option>
+                            <option value="19">19:00</option>
+                            <option value="20">20:00</option>
+                            <option value="21">21:00</option>
+                            <option value="22">22:00</option>
+                            <option value="23">23:00</option>
+                        </select>
                     </li>
                     <li>
-                        <button>okay</button>
+                        <button id="applyAddTask">Add</button>
                     </li>
                 </ul>
             </div>

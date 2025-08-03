@@ -6,17 +6,17 @@ body {
 }
 
 .timeline {
-    color: rgb(50,50,50);
+    color: rgba(100, 100, 100, 0.8);
     display: flex;
     margin: 0 0;
     padding-bottom: 15vw;
-    border-top: solid rgba(128, 128, 128,50%) 0.2vw;
+    border-top: solid rgba(150, 150, 150, 0.5) 0.2vw;
     font-size: 5vw;
     
 }
 
 #addTask {
-    color: white;
+    color: rgb(255, 255, 255);
     position: fixed;
     margin: 10vw;
     bottom: 0;
@@ -28,6 +28,18 @@ body {
     width: 15vw;
     height: 15vw;
     font-size: 10vw;
+}
+
+#addTaskMenuUl {
+     list-style-type: none;
+     padding: 0;
+     margin: 10px;
+     
+}
+
+#selectTime {
+    display: flex;
+    background-color: aqua;
 }
 
 #deleteTask{
@@ -60,6 +72,7 @@ body {
   font-size: 5vw;
   bottom: 27vw;
   right: 5vw;
+  border-radius: 2vw;
   overflow: hidden;
 
 }
