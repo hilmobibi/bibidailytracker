@@ -47,7 +47,14 @@ const hour21 = document.getElementById('hour21');
 const hour22 = document.getElementById('hour22');
 const hour23 = document.getElementById('hour23');
 
-//add task const list
-const select_start_time = document.getElementById('selectStartTime');
-const select_end_time = document.getElementById('selectEndTime');
+//apply add task
+function showResult() {
+  const select_start_time = document.getElementById('selectStartTime');
+  const select_end_time = document.getElementById('selectEndTime');
+  const startValue = select_start_time.value;
+  const endValue = select_end_time.value;
 
+  console.log(startValue);
+  console.log(endValue);
+
+}
