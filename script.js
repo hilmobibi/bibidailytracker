@@ -44,7 +44,7 @@ function showResult() {
     }
 
     // Height of each hour block (for example 5vw)
-    const hourBlockHeight = 21; // in vw
+    const hourBlockHeight = 21.015; // in vw
 
     // Calculate top and height
     const top = startValue * hourBlockHeight;
@@ -53,7 +53,7 @@ function showResult() {
     // Create the task element
     const task = document.createElement("div");
     task.classList.add("task");
-    task.innerText = `${startValue} - ${endValue} ${nameValue}`;
+    task.innerText = `${startValue} - ${endValue} \n${nameValue}`;
     task.style.position = "absolute";
     task.style.left = "10vw";
     task.style.top = `calc(${top}vw + 9px)`;
