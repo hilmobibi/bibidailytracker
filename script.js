@@ -54,7 +54,10 @@ function showResult() {
   const startValue = select_start_time.value;
   const endValue = select_end_time.value;
 
-  console.log(startValue);
-  console.log(endValue);
-
+  if (startValue === "" || endValue === "" ) {
+    alert('isi kontol')
+  }else {
+    console.log(startValue);
+    console.log(endValue);
+  }
 }
